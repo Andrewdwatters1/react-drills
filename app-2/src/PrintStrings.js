@@ -1,20 +1,32 @@
 import React, { Component } from 'react';
+// import logo from './logo.svg';
+import './App.css';
 
 class PrintStrings extends Component {
   constructor() {
-    super() 
+    super();
+
     this.state = {
-      printed: ["string", "cheese", "is", "delicious"]
+      fruits: [
+        "apples",
+        "bananas",
+        "cherries",
+        "dates"
+      ]
     }
   }
 
+
   render() {
+    let fruitsDisplay = this.state.fruits.map((e, i) => {
+      return (
+      <p key={i}> {e}</p>
+      );
+    })
+    
     return (
-      <div>
-        <p> {this.state.printed[0]} </p>
-        <p> {this.state.printed[1]} </p>
-        <p> {this.state.printed[2]} </p>
-        <p> {this.state.printed[3]} </p>
+      <div className="App">
+      {fruitsDisplay}
       </div>
     )
   }
