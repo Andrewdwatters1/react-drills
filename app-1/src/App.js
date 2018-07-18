@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import TextType from'./TextType.jsx'
+import TextType from'./TextType.js'
 
 class App extends Component {
   render() {
@@ -14,3 +14,4 @@ class App extends Component {
 }
 
 export default App;
+

@@ -22,4 +22,4 @@ class TextType extends Component {
     )
   }
 }
-export default TextType
+export default TextType;
